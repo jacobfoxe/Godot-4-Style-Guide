@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfmc5v10bg71x"]
+
+[ext_resource type="Script" path="res://Player Style Guide/player_style_guide.gd" id="1_s0x27"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hw5vt"]
+
+[node name="PlayerStyleGuide" type="CharacterBody2D"]
+script = ExtResource("1_s0x27")
+elemental_resistance = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hw5vt")
+
+[node name="CurrencyCounter" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+horizontal_alignment = 1
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 1.1
+one_shot = true
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

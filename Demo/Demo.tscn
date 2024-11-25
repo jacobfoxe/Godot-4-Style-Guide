@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctj3eh2yggkyd"]
+
+[ext_resource type="Script" path="res://Demo/demo.gd" id="1_vtqnd"]
+[ext_resource type="PackedScene" uid="uid://cfmc5v10bg71x" path="res://Player Style Guide/player_style_guide.tscn" id="2_1lec8"]
+
+[node name="Demo" type="Node"]
+script = ExtResource("1_vtqnd")
+
+[node name="GUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AddCurrencyButton" type="Button" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.438368
+anchor_top = 0.220679
+anchor_right = 0.533854
+anchor_bottom = 0.256173
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Add Currency!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Layer2D" type="Node2D" parent="."]
+
+[node name="PlayerStyleGuide" parent="Layer2D" instance=ExtResource("2_1lec8")]
+position = Vector2(531, 298)
+
+[connection signal="pressed" from="GUI/AddCurrencyButton" to="." method="_on_add_currency_button_pressed"]
