@@ -29,6 +29,7 @@
 ##		(for version control benefits!)
 ## - "is" does NOT mean "=="! It checks for type!
 ## - Use "and" and "or instead of && and || for readability. 
+## - Use lowercase letters in hexadecimal numbers (0xabcd) for readability. 
 #endregion
 
 @tool

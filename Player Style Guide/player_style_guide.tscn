@@ -6,7 +6,7 @@
 
 [node name="PlayerStyleGuide" type="CharacterBody2D"]
 script = ExtResource("1_s0x27")
-elemental_resistance = 2
+elemental_resistance = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hw5vt")
@@ -14,6 +14,7 @@ shape = SubResource("CircleShape2D_hw5vt")
 [node name="CurrencyCounter" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+text = "0 Moneys"
 horizontal_alignment = 1
 
 [node name="SpawnTimer" type="Timer" parent="."]

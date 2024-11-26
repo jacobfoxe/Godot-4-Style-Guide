@@ -1,5 +1,6 @@
 ## The main scene in the Style Guide Demo by Jacob Foxe. 2024. 
-## Link: 
+## Video: 
+## Repo: Repo: https://github.com/jacobfoxe/Godot-4-Style-Guide
 ##
 ## This scene handles basic processing to demonstrate effective style usage. 
 class_name Demo extends Node
